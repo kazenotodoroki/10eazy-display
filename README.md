@@ -46,7 +46,7 @@ Valeurs lues sur le panneau : LAeq 1 s, LAeq 15 min, LAeq 60 min, LCeq 1 s, LCeq
 Prérequis : **Python 3.9+** et **Pillow**.
 
 ```bash
-git clone https://github.com/<utilisateur>/10eazy-display.git
+git clone https://github.com/kazenotodoroki/10eazy-display.git
 cd 10eazy-display
 pip install -r requirements.txt
 ```
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ```bash
 # Connexion au PC qui fait tourner 10EaZy
-python server.py --ip 192.168.40.221
+python server.py --ip <IP-de-la-machine>
 
 # Ou sans IP : elle se saisit dans l'interface (bouton « Source »)
 python server.py
@@ -139,7 +139,7 @@ docs/            Captures d'écran
 | `GET /events` | Flux temps réel (Server-Sent Events) |
 | `GET /api/state` | État courant (JSON) |
 | `GET /api/history` | Historique des 15 dernières minutes |
-| `POST /api/config` | `{"host": "192.168.40.221"}` |
+| `POST /api/config` | `{"host": "<IP-de-la-machine>"}` |
 | `POST /api/reset` | Remise à zéro |
 
 ## Avertissement
@@ -148,4 +148,4 @@ Ce projet est **indépendant** : il n'est ni affilié ni approuvé par 10EaZy ou
 
 ## Licence
 
-À définir (par exemple MIT).
+MIT
